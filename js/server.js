@@ -1,23 +1,20 @@
 
 import express from "express";
-import expressWS from "express-ws";
+//import expressWS from "express-ws";
 
-function ignorparam() {}
+//function ignorparam() {}
 
 const port = 8080;
 
 const app = express();
-expressWS(app);
+//expressWS(app);
 
 app.disable("x-powered-by");
 
-app.use("/", express.static("app"));
-
-// specify multiple subnets as an array
-//app.set("trust proxy", ["loopback", "linklocal", "uniquelocal"]);
-// app.enable("trust proxy");
+app.use("/", express.static("static"));
 
 // THESE ARE FOR THE DYNAMIC SERVER
+/*
 app.use(function (req, res, next) {
     ignorparam(res);
     req.testing = "testing";
@@ -29,6 +26,7 @@ app.get("/", function (req, res, next) {
     ignorparam(req);
     res.end();
 });
+*/
 
 
 

@@ -13,7 +13,7 @@
             "pathMappings": [
                 {
                     "url": "http://localhost",
-                    "path": "${workspaceFolder}/app"
+                    "path": "${workspaceFolder}/static"
                 },
                 {
                     "url": "http://localhost:8080/index.html",
@@ -24,6 +24,8 @@
             "reAttach": true,
             "firefoxExecutable": "C:/Program Files/Firefox Developer Edition/firefox.exe"
         },
+
+
         {
             "name": "Node server",
             "type": "node",
@@ -32,16 +34,6 @@
             "skipFiles": [
                 "<node_internals>/**"
             ]
-        },
-        {
-            "name": "Launch Index Page",
-            "type": "firefox",
-            "request": "launch",
-            "reloadOnAttach": true,
-            "file": "${workspaceFolder}/index.html",
-            "preferences": {
-                "security.fileuri.strict_origin_policy": false
-            }
         }
     ]
 

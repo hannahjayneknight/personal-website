@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "type": "module",
   "version": "1.0.0",
   "description": "This item has been downloaded from the Bootstrap.Build - https://bootstrap.build/",
   "main": "server.js",
