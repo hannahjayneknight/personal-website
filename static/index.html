@@ -10,14 +10,6 @@
 		<!-- Bootstrap 4.3.1 CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) 
-		DON'T THINK I NEED THIS EITHER AS AN EXTRA LIBRARY - FIGURE OUT HOW I WILL DISPLAY IMAGES AND VIDEOS
-		WITH EASE INSTEAD -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-		
-		<!-- FontAwesome CSS DON'T THINK I WANNA USE THIS EITHER -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		
 		<!-- Startup 3 CSS (Styles for all blocks) -->
 		<link href="css/style.css" rel="stylesheet" />
 
@@ -25,45 +17,85 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head> 
 	<body>
-		<!-- Navigation 8 -->
-		<nav class="pt-30 pb-30 bg-light lh-40 text-center navigation_8">
+		<!-- Navigation -->
+		<nav class="pt-30 pb-30 bg-light lh-40 text-center fixed-top navigation_8">
 			<div class="container px-xl-0">
 				<div class="row align-items-center">
-					<div class="col-lg-3 text-lg-left">
+					<div class="col-lg-6 text-lg-left">
 						<a href="#" class="link logo color-main">HANNAH JAYNE KNIGHT</a>
 					</div>
 					<div class="col-lg-6">
-						<a href="#" class="link mr-15 color-main">Education</a>
-						<a href="#" class="link mx-15 color-main">Employment history</a>
-						<a href="#" class="link mx-15 color-main">Projects</a>
-						<a href="#" class="link mx-15 color-main">Essays</a>
-						<a href="#" class="link ml-15 color-main">Blah blah</a>
+						<a href="#About me" class="link mr-15 color-main">About me</a>
+						<a href="#Education" class="link mr-15 color-main">Education</a>
+						<a href="#Employment history" class="link mr-15 color-main">Employment history</a>
+						<a href="#Projects" class="link mr-15 color-main">Projects</a>
+						<a href="#Essays" class="link mr-15 color-main">Essays</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<!-- Application 21 -->
+		<!-- Sections -->
 		<section class="pt-100 pb-100 bg-light application_21">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
-					<div class="col-md-7 col-xl-6">
-						<div class="pb-15 color-heading f-22 medium op-7"><div>Personal statement goes here</div></div>
+					<div class="col-md-2">
+						<div id="About me" class="pb-15 color-heading f-22 medium op-7"><div>About me</div></div>
 					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-9">
+						<div class="pb-15 color-heading text-adaptive"><div>Personal statement goes here</div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-100 pb-100 bg-light application_21">
+			<div class="container px-xl-0">
+				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
+					<div class="col-md-2">
+						<div id="Education" class="pb-15 color-heading f-22 medium op-7"><div>Education</div></div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-100 pb-100 bg-light application_21">
+			<div class="container px-xl-0">
+				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
+					<div class="col-md-2">
+						<div id="Employment history" class="pb-15 color-heading f-22 medium op-7"><div>Employment history</div></div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-100 pb-100 bg-light application_21">
+			<div class="container px-xl-0">
+				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
+					<div class="col-md-2">
+						<div id="Projects" class="pb-15 color-heading f-22 medium op-7"><div>Projects</div></div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-100 pb-100 bg-light application_21">
+			<div class="container px-xl-0">
+				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
+					<div class="col-md-2">
+						<div id="Essays" class="pb-15 color-heading f-22 medium op-7"><div>Essays</div></div>
+					</div>
+					<div class="col-md-1"></div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Bootstrap 4.3.1 JS -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-		<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
-		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-		<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		<!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
-		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-		<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
-		<script src="js/jquery.maskedinput.min.js"></script>
 		<!-- Startup 3 JS (Custom js for all blocks) -->
 		<script src="js/script.js"></script>
 	</body>

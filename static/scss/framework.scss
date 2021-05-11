@@ -972,28 +972,6 @@ input[type=radio]{
 	}
 }
 
-/* Google ReCaptcha */
-
-.grecaptcha-overlay{
-	display:none;
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index:1000;
-	cursor:pointer;
-}
-
-.grecaptcha-popup{
-	display:none;
-	position:fixed;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	z-index:1000;
-}
-
 /* Dropdown menu */
 
 .dropdown{
@@ -1051,50 +1029,6 @@ input[type=radio]{
 	}
 }
 
-/* Slider stylers */
-
-.slider{
-	&.arrows{
-		$i: 0;
-		@while $i < 101 {
-			&#{$i}{
-				.slick-prev{
-					left:1px * $i;
-				}
-				.slick-next{
-					right:1px * $i;
-				}
-			}
-			$i: $i + 10;
-		}
-	}
-	&.dots{
-		&_color_main{
-			.slick-dots{
-				li{
-					button{
-						border-color:$color_main;
-					}
-					&.slick-active{
-						button{
-							background:$color_main;
-						}
-					}
-				}
-			}
-		}
-		$i: -100;
-		@while $i < 101 {
-			&#{$i}{
-				.slick-dots{
-					bottom:1px * $i;
-				}
-			}
-			$i: $i + 10;
-		}
-
-	}
-}
 
 /* Change some Bootstrap's styles */
 
