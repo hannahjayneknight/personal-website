@@ -13,7 +13,16 @@ $(window).on("popstate",function(e){
 $(document).ready(function() {
     SF_scripts();
 
-    $(".Home").hide();
+    launch_page();
+
+    $("#project-button").on("click" , function(e){
+        $project = $("#" + e.target.id + " Project");
+        $(".Home").hide();
+        $project.show();
+        $("html,body").scrollTop(0);
+        //alert(e.target.id);
+
+    });
 
     $("#back").on("click" , function(){
         $(".Project").hide();
@@ -22,7 +31,12 @@ $(document).ready(function() {
    });
 });
 
-function SF_scripts(){
+function launch_page() {
+    $(".Home").show();
+    $(".Project").hide();
+}
+
+function SF_scripts() {
 
     $(window).resize(function(){
         resizeVideo();
@@ -76,6 +90,7 @@ function SF_scripts(){
         }
         return section;
     }
+
     function SF_highest_zIndex(){
         // Find nav|header|section|footer with highest z-index on page
         var zIndex = 1;
