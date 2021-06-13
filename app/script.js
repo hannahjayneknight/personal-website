@@ -15,12 +15,20 @@ $(document).ready(function() {
 
     launch_page();
 
+
     $("#project-button").on("click" , function(e){
-        $project = $("#" + e.target.id + " Project");
         $(".Home").hide();
-        $project.show();
+        var id;
+        if($(e.target).is("h1")) {
+            id = e.target.innerHTML;
+        } else if ($(e.target).is("h2")) {
+            id = $(e.target).siblings("#project-button-title")[0].innerHTML;
+        } else {
+            id = $(e.target).find("h1")[0].innerHTML;
+        }
+        $("#" + id.replace(/\s/g,"")).show();
         $("html,body").scrollTop(0);
-        //alert(e.target.id);
+        //alert($id);
 
     });
 
