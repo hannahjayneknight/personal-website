@@ -14,7 +14,7 @@
 		<link href="css/style.css" rel="stylesheet" />
 
 		<!-- jQuery 3.3.1 -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head> 
 	<body>
 		<!-- Navigation -->
@@ -307,11 +307,13 @@
 			</div>
 		</section>
 		<!-- Project pages -->
-		<section hidden id="An Ode To Cardboard" class="pt-100 pb-100 bg-light ">
+		<section id="An Ode To Cardboard" class="pt-100 pb-100 bg-light ">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40 ">
-						<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						<button id="back">
+							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						</button>
 					</div>
 					
 					<div class="col-md-5 pb-40">
@@ -339,13 +341,15 @@
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40 ">
-						<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						<button id="back">
+							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						</button>
 					</div>
 
 					<div class="col-md-5 pb-40">
 						<div class="col-md-5">
 							<div id="Quiznconquer title" class="pb-15 color-heading f-22 medium op-7">Quiznconquer</div>
-							<div>A continuation of a university project in which we built a web app. This is a four player game that aims to make learning facts and vocabulary fun. The GitHub repository can be found at <a href="url">https://github.com/hannahjayneknight/quiznconquer</a>. <strong>Skills:</strong> Debugging techniques, configuring a DNS, opening and using an AWS instance, JavaScript, HTML, SQLite, CSS, UI/ UX.</div>
+							<div>A continuation of a university project in which we built a web app. This is a four player game that aims to make learning facts and vocabulary fun. The GitHub repository can be found at <a href="url">https://github.com/hannahjayneknight/quiznconquer</a> and the prototype can be found at <a href="url">http://quiznconquer.com/</a>. <strong>Skills:</strong> Debugging techniques, configuring a DNS, opening and using an AWS instance, JavaScript, HTML, SQLite, CSS, UI/ UX.</div>
 						</div>
 					</div>
 
@@ -359,7 +363,6 @@
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40">
-						<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
 					</div>
 
 					<div class="col-md-5 pb-40">
@@ -381,11 +384,10 @@
 			</div>
 		</section>
 
-		<section id="Carpet cleaner" class="pt-100 pb-100 bg-light ">
+		<section hidden id="Carpet cleaner" class="pt-100 pb-100 bg-light ">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40">
-						<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
 					</div>
 
 					<div class="col-md-5 pb-40">
@@ -405,6 +407,6 @@
 		<!-- Bootstrap 4.3.1 JS -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<!-- Startup 3 JS (Custom js for all blocks) -->
-		<script src="js/script.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>

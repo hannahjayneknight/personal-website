@@ -11,9 +11,9 @@ const app = express();
 
 app.disable("x-powered-by");
 
-app.use("/", express.static("static"));
+app.use("/", express.static("app"));
 
-// THESE ARE FOR THE DYNAMIC SERVER
+// THESE ARE FOR WEB SOCKETS
 /*
 app.use(function (req, res, next) {
     ignorparam(res);

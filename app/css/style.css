@@ -85,6 +85,7 @@ a:active, a:focus, button:active, button:focus {
 button {
   border: none;
   outline: none !important;
+  background: transparent;
 }
 
 input, textarea {

@@ -12,6 +12,10 @@ $(window).on("popstate",function(e){
 
 $(document).ready(function() {
     SF_scripts();
+
+    $("#back").on("click" , function(){
+        alert("I've been clicked!");
+   });
 });
 
 function SF_scripts(){
