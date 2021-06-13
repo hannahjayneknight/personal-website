@@ -18,6 +18,7 @@ $(document).ready(function() {
 
     $("#project-button").on("click" , function(e){
         $(".Home").hide();
+        $("#name").show();
         var id;
         if($(e.target).is("h1")) {
             id = e.target.innerHTML;
@@ -28,14 +29,16 @@ $(document).ready(function() {
         }
         $("#" + id.replace(/\s/g,"")).show();
         $("html,body").scrollTop(0);
-        //alert($id);
-
     });
+
+    $("#name").on("click" , function(){
+        $(".Project").hide();
+        $(".Home").show();
+   });
 
     $("#back").on("click" , function(){
         $(".Project").hide();
         $(".Home").show();
-        //alert($(".Project"));
    });
 });
 
