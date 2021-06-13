@@ -13,8 +13,12 @@ $(window).on("popstate",function(e){
 $(document).ready(function() {
     SF_scripts();
 
+    $(".Home").hide();
+
     $("#back").on("click" , function(){
-        alert("I've been clicked!");
+        $(".Project").hide();
+        $(".Home").show();
+        //alert($(".Project"));
    });
 });
 
