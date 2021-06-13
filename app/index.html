@@ -31,7 +31,7 @@
 						<a href="#About me" class="link mr-15 color-main">About me</a>
 						<a href="#Education" class="link mr-15 color-main">Education</a>
 						<a href="#Employment history" class="link mr-15 color-main">Employment history</a>
-						<a href="#Projects" class="link mr-15 color-main">Projects</a>
+						<a id="projects-link" href="#Projects" class="link mr-15 color-main">Projects</a>
 						<a href="#Essays" class="link mr-15 color-main">Essays</a>
 					</div>
 				</div>
@@ -134,9 +134,9 @@
 						<!-- Row 1 -->
 						<div class="row p-2">
 							<div class="col my-auto">
-								<button id="project-button">
-									<img src="/i/O2C/side.png" class="img-fluid" >
-									<span class="image__overlay">
+								<button class="project-button">
+									<img src="/i/project-buttons/O2C.png" class="img-fluid" >
+									<span class="image__overlay" class="flex-fill">
 										<h1 id="project-button-title" class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">An Ode To Cardboard</h1>
 										<h2 id="project-button-arrow" class="pb-10 f-14" style="margin:0;padding:0">→</h2>
 									</span>
@@ -145,26 +145,38 @@
 
 
 							<div class="col my-auto">
-								<img src="/i/i2.jpg" class="img-fluid" >
-								<div class="image__overlay">
-									<p class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">Project title</h1>
-									<p class="pb-10 f-14" style="margin:0;padding:0">Project summary →</h2>
-								</div>
+								<button class="project-button">
+									<img src="/i/project-buttons/QnC.jpg" class="img-fluid" >
+									<span class="image__overlay" class="flex-fill">
+										<h1 id="project-button-title" class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">Quiz n Conquer</h1>
+										<h2 id="project-button-arrow" class="pb-10 f-14" style="margin:0;padding:0">→</h2>
+									</span>
+								</button>
 							</div>
+
+
 							<div class="col my-auto">
-								<img src="/i/i2.jpg" class="img-fluid" >
-								<div class="image__overlay">
-									<p class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">Project title</h1>
-									<p class="pb-10 f-14" style="margin:0;padding:0">Project summary →</h2>
-								</div>
+								<button class="project-button">
+									<img src="/i/project-buttons/POSE.png" class="img-fluid" >
+									<span class="image__overlay" class="flex-fill">
+										<h1 id="project-button-title" class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">POSE</h1>
+										<h2 id="project-button-arrow" class="pb-10 f-14" style="margin:0;padding:0">→</h2>
+									</span>
+								</button>
 							</div>
+
+
 							<div class="col my-auto">
-								<img src="/i/i2.jpg" class="img-fluid" >
-								<div class="image__overlay">
-									<p class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">Project title</h1>
-									<p class="pb-10 f-14" style="margin:0;padding:0">Project summary →</h2>
-								</div>
+								<button class="project-button">
+									<img src="/i/project-buttons/carpet-cleaner.JPG" class="img-fluid" >
+									<span class="image__overlay" class="flex-fill">
+										<h1 id="project-button-title" class="pb-10 f-14 bold text-uppercase text-center" style="margin:0;padding:0">A Hand-held Carpet Cleaner For Single Parents</h1>
+										<h2 id="project-button-arrow" class="pb-10 f-14" style="margin:0;padding:0">→</h2>
+									</span>
+								</button>
 							</div>
+
+
 						</div>
 
 						<!-- Row 2
@@ -320,7 +332,7 @@
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40 ">
-						<button id="back">
+						<button class="back">
 							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
 						</button>
 					</div>
@@ -346,11 +358,11 @@
 			</div>
 		</section>
 
-		<section  id="Quiznconquer" class="Project pt-100 pb-100 bg-light ">
+		<section  id="QuiznConquer" class="Project pt-100 pb-100 bg-light ">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40 ">
-						<button id="back">
+						<button class="back">
 							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
 						</button>
 					</div>
@@ -368,10 +380,13 @@
 			</div>
 		</section>
 
-		<section  id="Pose" class="Project pt-100 pb-100 bg-light ">
+		<section  id="POSE" class="Project pt-100 pb-100 bg-light ">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40">
+						<button class="back">
+							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						</button>
 					</div>
 
 					<div class="col-md-5 pb-40">
@@ -393,10 +408,13 @@
 			</div>
 		</section>
 
-		<section  id="Carpet cleaner" class="Project pt-100 pb-100 bg-light ">
+		<section  id="AHand-heldCarpetCleanerForSingleParents" class="Project pt-100 pb-100 bg-light ">
 			<div class="container px-xl-0">
 				<div class="mb-md-5 row justify-content-between align-items-center align-items-xl-start">
 					<div class="col-md-1 pb-40">
+						<button class="back">
+							<img id="back-arrow" src="/i/arrow3.png" width="45" height="24" class="mx-auto d-block">
+						</button>
 					</div>
 
 					<div class="col-md-5 pb-40">
@@ -407,6 +425,10 @@
 					</div>
 
 					<div class="col-md-6 pb-40">
+						<img src="/i/carpet-cleaner/render1.JPG" width="560" height="315" class="pb-40 img-fluid">
+						<img src="/i/carpet-cleaner/annotated-concept.png" width="560" height="315" class="pb-40 img-fluid">
+						<img src="/i/carpet-cleaner/cutaway.png" width="560" height="315" class="pb-40 img-fluid">
+						<img src="/i/carpet-cleaner/exploded.png" width="560" height="315" class="pb-40 img-fluid">
 					</div>
 				</div>
 			</div>

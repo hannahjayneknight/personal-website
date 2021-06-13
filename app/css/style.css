@@ -138,9 +138,11 @@ b, strong {
 .image__overlay {
   position: absolute;
   top: 0;
-  left: 2;
-  width: 87%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;

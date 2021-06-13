@@ -16,7 +16,7 @@ $(document).ready(function() {
     launch_page();
 
 
-    $("#project-button").on("click" , function(e){
+    $(".project-button").on("click" , function(e){
         $(".Home").hide();
         $("#name").show();
         var id;
@@ -36,9 +36,12 @@ $(document).ready(function() {
         $(".Home").show();
    });
 
-    $("#back").on("click" , function(){
+    $(".back").on("click" , function(){
         $(".Project").hide();
         $(".Home").show();
+        var href = $("#projects-link").attr("href");
+        window.location.href = href;
+        // jquery click on projects in nav bar
    });
 });
 
