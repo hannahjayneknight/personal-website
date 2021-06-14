@@ -43,6 +43,7 @@ $(document).ready(function() {
         window.location.href = href;
         // jquery click on projects in nav bar
    });
+
 });
 
 function launch_page() {
