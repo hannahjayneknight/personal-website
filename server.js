@@ -11,7 +11,7 @@ const app = express();
 
 app.disable("x-powered-by");
 
-app.use("/", express.static("app"));
+app.use("/", express.static(""));
 
 // THESE ARE FOR WEB SOCKETS
 /*
