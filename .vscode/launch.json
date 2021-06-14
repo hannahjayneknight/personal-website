@@ -30,6 +30,17 @@
             "skipFiles": [
                 "<node_internals>/**"
             ]
+        },
+
+        {
+            "name": "Launch Index Page",
+            "type": "firefox",
+            "request": "launch",
+            "reloadOnAttach": true,
+            "file": "${workspaceFolder}/index.html",
+            "preferences": {
+                "security.fileuri.strict_origin_policy": false
+            }
         }
     ]
 
