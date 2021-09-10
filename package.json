@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
-  "type": "module",
   "version": "1.0.0",
+  "type": "module",
   "description": "This item has been downloaded from the Bootstrap.Build - https://bootstrap.build/",
   "main": "server.js",
   "scripts": {
@@ -12,14 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/hannahjayneknight/personal-website.git"
   },
-  "author": "Hannah Jayne Knight",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hannahjayneknight/personal-website/issues"
   },
   "homepage": "https://github.com/hannahjayneknight/personal-website#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-ws": "^4.0.0"
+    "express": "^4.17.1"
   }
 }

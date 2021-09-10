@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Firefox Debugger",
             "type": "firefox",
@@ -16,7 +17,7 @@
                     "path": "${workspaceFolder}"
                 }
             ],
-            "keepProfileChanges": true,
+            "keepProfileChanges": false,
             "reAttach": true,
             "firefoxExecutable": "C:/Program Files/Firefox Developer Edition/firefox.exe"
         },
