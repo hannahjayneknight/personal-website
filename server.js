@@ -1,14 +1,21 @@
-/*jslint devel: true */
 import express from "express";
+
 const port = 8080;
+
 const app = express();
 
+app.use(express.static("../personal-website"));
 
-app.disable("x-powered-by");
+// THESE ARE FOR THE DYNAMIC SERVER
+app.use(function (req, res, next) {
+    req.testing = "testing";
+    return next();
+});
 
-app.use("/", express.static(""));
+app.get("/", function (req, res, next) {
+    res.end();
+});
 
 app.listen(port, function () {
     console.log("Listening on port " + port);
 });
-
