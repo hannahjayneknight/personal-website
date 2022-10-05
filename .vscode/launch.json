@@ -19,7 +19,7 @@
             ],
             "keepProfileChanges": false,
             "reAttach": true,
-            "firefoxExecutable": "C:/Program Files/Firefox Developer Edition/firefox.exe"
+            "firefoxExecutable": "C:/Program Files (x86)/Firefox Developer Edition/firefox.exe"
         },
 
 
