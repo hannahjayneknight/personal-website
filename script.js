@@ -27,7 +27,7 @@ $(document).ready(function() {
         } else {
             id = $(e.target).find("h1")[0].innerHTML;
         }
-        $("#" + id.replace(/\s/g,"")).show();
+        $("#" + id.replace(/\s/g,"").replace("'","")).show();
         $("html,body").scrollTop(0);
     });
 
